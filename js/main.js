@@ -18,22 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
   initTimestamp();
   initURL();
 
-  // Navigation: build simple nav from cards
-  const nav = document.getElementById('tool-nav');
-  document.querySelectorAll('.card').forEach(card => {
-    const btn = document.createElement('button');
-    btn.textContent = card.querySelector('h2').textContent;
-    btn.addEventListener('click', () => card.scrollIntoView({behavior:'smooth',block:'center'}));
-    nav.appendChild(btn);
-  });
+  // Navigation: build simple nav from cards if no explicit links exist
+  const nav = document.getElementById('tool-nav') || document.querySelector('.nav');
+  if(nav && nav.children.length === 0){
+    document.querySelectorAll('.card').forEach(card => {
+      const h = card.querySelector('h2');
+      if(!h) return;
+      const a = document.createElement('a');
+      const slug = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g,'').trim();
+      a.textContent = h.textContent;
+      a.href = `#${card.id || slug}`;
+      a.addEventListener('click', (e)=>{ e.preventDefault(); card.scrollIntoView({behavior:'smooth',block:'center'}); });
+      nav.appendChild(a);
+    });
+  }
 
   // Dark mode toggle
   const toggle = document.getElementById('dark-toggle');
-  const root = document.documentElement;
   const saved = localStorage.getItem('devutils:dark') === '1';
   if (saved) document.documentElement.classList.add('dark');
-  toggle.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('devutils:dark', isDark ? '1' : '0');
-  });
+  if(toggle){
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('devutils:dark', isDark ? '1' : '0');
+    });
+  }
 });

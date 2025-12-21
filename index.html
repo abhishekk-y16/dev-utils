@@ -8,127 +8,85 @@
 </head>
 <body>
   <header class="site-header">
-    <h1>Developer Utilities Hub</h1>
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
     <div class="controls">
-      <nav class="nav" id="tool-nav"></nav>
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
       <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
   <main class="container">
-    <section id="dashboard" class="grid">
-      <!-- Each tool is a card. JS modules will wire behavior to these elements. -->
+    <section class="hero">
+      <div>
+        <div class="title">Developer Utilities Hub</div>
+        <p>Small, focused, front-end tools for everyday developer tasks. Click a tool to open its dedicated page.</p>
+      </div>
+      <div>
+        <img src="assets/.gitkeep" alt="decor" style="opacity:0.05;width:120px;height:120px;"/>
+      </div>
+    </section>
 
-      <article class="card" id="password-card">
+    <section id="dashboard" class="grid">
+      <article class="card">
         <h2>Password Generator</h2>
         <div class="card-body">
-          <label>Length: <input type="number" id="pw-length" min="4" max="128" value="16"></label>
-          <label><input type="checkbox" id="pw-upper" checked> Uppercase</label>
-          <label><input type="checkbox" id="pw-lower" checked> Lowercase</label>
-          <label><input type="checkbox" id="pw-numbers" checked> Numbers</label>
-          <label><input type="checkbox" id="pw-symbols"> Symbols</label>
+          <p class="muted">Generate secure passwords with options.</p>
           <div class="row">
-            <input id="pw-output" readonly class="output" placeholder="Generated password">
-            <button id="pw-generate">Generate</button>
-            <button id="pw-copy">Copy</button>
+            <a class="row button" href="password.html">Open</a>
           </div>
         </div>
       </article>
 
-      <article class="card" id="wordcard">
+      <article class="card">
         <h2>Word Counter</h2>
         <div class="card-body">
-          <textarea id="word-input" rows="6" placeholder="Paste text here..."></textarea>
-          <div class="stats">
-            <span id="wc-words">Words: 0</span>
-            <span id="wc-chars">Chars: 0</span>
-            <span id="wc-sentences">Sentences: 0</span>
-          </div>
+          <p class="muted">Live counts for words, characters and sentences.</p>
+          <div class="row"><a class="row button" href="wordcounter.html">Open</a></div>
         </div>
       </article>
 
-      <article class="card" id="jsoncard">
+      <article class="card">
         <h2>JSON Formatter</h2>
-        <div class="card-body">
-          <textarea id="json-input" rows="6" placeholder='Paste raw JSON here'></textarea>
-          <div class="row">
-            <button id="json-validate">Validate & Format</button>
-            <button id="json-copy">Copy</button>
-          </div>
-          <pre id="json-output" class="output-area" aria-live="polite"></pre>
-        </div>
+        <div class="card-body"><p class="muted">Validate & pretty-print JSON.</p><div class="row"><a class="row button" href="json.html">Open</a></div></div>
       </article>
 
-      <article class="card" id="base64card">
-        <h2>Base64 Encoder / Decoder</h2>
-        <div class="card-body">
-          <textarea id="b64-input" rows="4" placeholder="Text to encode/decode"></textarea>
-          <div class="row">
-            <button id="b64-encode">Encode</button>
-            <button id="b64-decode">Decode</button>
-            <button id="b64-copy">Copy</button>
-          </div>
-          <pre id="b64-output" class="output-area"></pre>
-        </div>
+      <article class="card">
+        <h2>Base64</h2>
+        <div class="card-body"><p class="muted">Encode/Decode Base64 safely.</p><div class="row"><a class="row button" href="base64.html">Open</a></div></div>
       </article>
 
-      <article class="card" id="colorcard">
+      <article class="card">
         <h2>Color Generator</h2>
-        <div class="card-body">
-          <div class="row">
-            <button id="color-gen">Generate Color</button>
-            <button id="color-copy">Copy</button>
-          </div>
-          <div class="color-row">
-            <div id="color-preview" class="color-preview"></div>
-            <div>
-              <div id="color-hex">HEX: #000000</div>
-              <div id="color-rgb">RGB: rgb(0,0,0)</div>
-            </div>
-          </div>
-        </div>
+        <div class="card-body"><p class="muted">Random HEX & RGB values with preview.</p><div class="row"><a class="row button" href="color.html">Open</a></div></div>
       </article>
 
-      <article class="card" id="regexcard">
+      <article class="card">
         <h2>Regex Tester</h2>
-        <div class="card-body">
-          <input id="regex-pattern" placeholder="Pattern (without / /)">
-          <input id="regex-flags" placeholder="Flags (e.g., g, i)">
-          <textarea id="regex-input" rows="4" placeholder="Test string"></textarea>
-          <div class="row">
-            <button id="regex-test">Test</button>
-            <button id="regex-clear">Clear</button>
-          </div>
-          <pre id="regex-output" class="output-area"></pre>
-        </div>
+        <div class="card-body"><p class="muted">Quickly test and highlight matches.</p><div class="row"><a class="row button" href="regex.html">Open</a></div></div>
       </article>
 
-      <article class="card" id="timestampcard">
+      <article class="card">
         <h2>Timestamp Converter</h2>
-        <div class="card-body">
-          <label>Unix timestamp (s): <input id="ts-input" placeholder="e.g., 1672531200"></label>
-          <div class="row">
-            <button id="ts-to-date">→ Date</button>
-            <button id="date-to-ts">Date → TS</button>
-          </div>
-          <input id="ts-date" placeholder="YYYY-MM-DDTHH:MM:SS" />
-          <div id="ts-output" class="output-area"></div>
-        </div>
+        <div class="card-body"><p class="muted">Unix ↔ human-readable timestamps.</p><div class="row"><a class="row button" href="timestamp.html">Open</a></div></div>
       </article>
 
-      <article class="card" id="urlcard">
-        <h2>URL Encoder / Decoder</h2>
-        <div class="card-body">
-          <textarea id="url-input" rows="3" placeholder="URL or text"></textarea>
-          <div class="row">
-            <button id="url-encode">Encode</button>
-            <button id="url-decode">Decode</button>
-            <button id="url-copy">Copy</button>
-          </div>
-          <pre id="url-output" class="output-area"></pre>
-        </div>
+      <article class="card">
+        <h2>URL Encoder</h2>
+        <div class="card-body"><p class="muted">Encode and decode URL parts.</p><div class="row"><a class="row button" href="url.html">Open</a></div></div>
       </article>
-
     </section>
   </main>
 
