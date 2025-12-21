@@ -9,14 +9,15 @@ import initURL from './urlEncoder.js';
 
 // Bootstraps all modules and handles small global UI features
 document.addEventListener('DOMContentLoaded', () => {
-  initPassword();
-  initWordCounter();
-  initJSONFormatter();
-  initBase64();
-  initColor();
-  initRegex();
-  initTimestamp();
-  initURL();
+  // Initialize modules individually and guard against errors on pages without tool DOM
+  try{ initPassword(); }catch(e){ console.warn('initPassword skipped', e); }
+  try{ initWordCounter(); }catch(e){ console.warn('initWordCounter skipped', e); }
+  try{ initJSONFormatter(); }catch(e){ console.warn('initJSONFormatter skipped', e); }
+  try{ initBase64(); }catch(e){ console.warn('initBase64 skipped', e); }
+  try{ initColor(); }catch(e){ console.warn('initColor skipped', e); }
+  try{ initRegex(); }catch(e){ console.warn('initRegex skipped', e); }
+  try{ initTimestamp(); }catch(e){ console.warn('initTimestamp skipped', e); }
+  try{ initURL(); }catch(e){ console.warn('initURL skipped', e); }
 
   // Navigation: build simple nav from cards if no explicit links exist
   const nav = document.getElementById('tool-nav') || document.querySelector('.nav');
