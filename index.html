@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Utilities Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Developer Utilities Hub</h1>
+    <div class="controls">
+      <nav class="nav" id="tool-nav"></nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="dashboard" class="grid">
+      <!-- Each tool is a card. JS modules will wire behavior to these elements. -->
+
+      <article class="card" id="password-card">
+        <h2>Password Generator</h2>
+        <div class="card-body">
+          <label>Length: <input type="number" id="pw-length" min="4" max="128" value="16"></label>
+          <label><input type="checkbox" id="pw-upper" checked> Uppercase</label>
+          <label><input type="checkbox" id="pw-lower" checked> Lowercase</label>
+          <label><input type="checkbox" id="pw-numbers" checked> Numbers</label>
+          <label><input type="checkbox" id="pw-symbols"> Symbols</label>
+          <div class="row">
+            <input id="pw-output" readonly class="output" placeholder="Generated password">
+            <button id="pw-generate">Generate</button>
+            <button id="pw-copy">Copy</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="wordcard">
+        <h2>Word Counter</h2>
+        <div class="card-body">
+          <textarea id="word-input" rows="6" placeholder="Paste text here..."></textarea>
+          <div class="stats">
+            <span id="wc-words">Words: 0</span>
+            <span id="wc-chars">Chars: 0</span>
+            <span id="wc-sentences">Sentences: 0</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="jsoncard">
+        <h2>JSON Formatter</h2>
+        <div class="card-body">
+          <textarea id="json-input" rows="6" placeholder='Paste raw JSON here'></textarea>
+          <div class="row">
+            <button id="json-validate">Validate & Format</button>
+            <button id="json-copy">Copy</button>
+          </div>
+          <pre id="json-output" class="output-area" aria-live="polite"></pre>
+        </div>
+      </article>
+
+      <article class="card" id="base64card">
+        <h2>Base64 Encoder / Decoder</h2>
+        <div class="card-body">
+          <textarea id="b64-input" rows="4" placeholder="Text to encode/decode"></textarea>
+          <div class="row">
+            <button id="b64-encode">Encode</button>
+            <button id="b64-decode">Decode</button>
+            <button id="b64-copy">Copy</button>
+          </div>
+          <pre id="b64-output" class="output-area"></pre>
+        </div>
+      </article>
+
+      <article class="card" id="colorcard">
+        <h2>Color Generator</h2>
+        <div class="card-body">
+          <div class="row">
+            <button id="color-gen">Generate Color</button>
+            <button id="color-copy">Copy</button>
+          </div>
+          <div class="color-row">
+            <div id="color-preview" class="color-preview"></div>
+            <div>
+              <div id="color-hex">HEX: #000000</div>
+              <div id="color-rgb">RGB: rgb(0,0,0)</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="regexcard">
+        <h2>Regex Tester</h2>
+        <div class="card-body">
+          <input id="regex-pattern" placeholder="Pattern (without / /)">
+          <input id="regex-flags" placeholder="Flags (e.g., g, i)">
+          <textarea id="regex-input" rows="4" placeholder="Test string"></textarea>
+          <div class="row">
+            <button id="regex-test">Test</button>
+            <button id="regex-clear">Clear</button>
+          </div>
+          <pre id="regex-output" class="output-area"></pre>
+        </div>
+      </article>
+
+      <article class="card" id="timestampcard">
+        <h2>Timestamp Converter</h2>
+        <div class="card-body">
+          <label>Unix timestamp (s): <input id="ts-input" placeholder="e.g., 1672531200"></label>
+          <div class="row">
+            <button id="ts-to-date">→ Date</button>
+            <button id="date-to-ts">Date → TS</button>
+          </div>
+          <input id="ts-date" placeholder="YYYY-MM-DDTHH:MM:SS" />
+          <div id="ts-output" class="output-area"></div>
+        </div>
+      </article>
+
+      <article class="card" id="urlcard">
+        <h2>URL Encoder / Decoder</h2>
+        <div class="card-body">
+          <textarea id="url-input" rows="3" placeholder="URL or text"></textarea>
+          <div class="row">
+            <button id="url-encode">Encode</button>
+            <button id="url-decode">Decode</button>
+            <button id="url-copy">Copy</button>
+          </div>
+          <pre id="url-output" class="output-area"></pre>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
