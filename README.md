@@ -51,15 +51,7 @@ Open the project locally (no build step):
 ```powershell
 # from repo root
 Start-Process index.html
-```
-
-Or serve with a simple static server:
-
-```powershell
-# using Python (if installed)
-python -m http.server 8000
-# then open http://localhost:8000
-```
+``
 
 ## How to use
 
