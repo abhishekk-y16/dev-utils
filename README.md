@@ -1,5 +1,86 @@
 # Developer Utilities Hub
 
+[![Repo size](https://img.shields.io/github/repo-size/abhishekk-y16/dev-utils)](https://github.com/abhishekk-y16/dev-utils)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+A lightweight, frontend-only collection of small developer utilities built with HTML, CSS and JavaScript.
+
+--
+
+## Table of Contents
+
+- [Project overview](#project-overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Quick Start](#quick-start)
+- [How to use](#how-to-use)
+- [Future improvements](#future-improvements)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project overview
+
+This repository contains multiple small tools useful for daily development tasks. Each tool is implemented as a focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.
+
+## Features
+
+- Password Generator — configurable length & character sets
+- Word Counter — live words/characters/sentences
+- JSON Formatter — validate & pretty-print JSON
+- Base64 Encoder / Decoder — unicode-safe
+- Color Generator — random HEX/RGB with preview
+- Regex Tester — pattern + flags, highlights matches
+- Timestamp Converter — unix ↔ ISO
+- URL Encoder / Decoder — encodeURIComponent / decodeURIComponent
+
+## Screenshots
+
+Placeholder screenshots (replace with real captures):
+
+![App screenshot 1](assets/screenshot-1.png)
+![App screenshot 2](assets/screenshot-2.png)
+
+GIF demo (placeholder):
+
+![demo-gif](assets/demo.gif)
+
+## Quick Start
+
+Open the project locally (no build step):
+
+```powershell
+# from repo root
+Start-Process index.html
+```
+
+Or serve with a simple static server:
+
+```powershell
+# using Python (if installed)
+python -m http.server 8000
+# then open http://localhost:8000
+```
+
+## How to use
+
+- Browse to the homepage and select a tool from the nav.
+- Each tool lives on its own page with a focused UI and copy buttons.
+
+## Future improvements
+
+- Accessibility improvements (ARIA, keyboard shortcuts)
+- Add unit tests and CI for automated checks
+- Add theming presets and export/import for preferences
+
+## Contributing
+
+See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Small, focused PRs welcome.
+
+## License
+
+MIT — see `LICENSE`.
+# Developer Utilities Hub
+
 A lightweight, frontend-only collection of small developer utilities built with HTML, CSS and JavaScript.
 
 ## Project overview
@@ -46,33 +127,3 @@ Suggested incremental commits:
 - Update README with usage instructions
 
 License: MIT (or choose your preferred license)
-\nUpdate 1: minor doc polish at 2025-12-21T15:21:28.2194751+05:30
-\nUpdate 2: minor doc polish at 2025-12-21T15:21:28.4067553+05:30
-\nUpdate 3: minor doc polish at 2025-12-21T15:21:28.5434812+05:30
-\nUpdate 4: minor doc polish at 2025-12-21T15:21:28.6673484+05:30
-\nUpdate 5: minor doc polish at 2025-12-21T15:21:28.8009969+05:30
-\nUpdate 6: minor doc polish at 2025-12-21T15:21:28.9576500+05:30
-\nUpdate 7: minor doc polish at 2025-12-21T15:21:29.0876000+05:30
-\nUpdate 8: minor doc polish at 2025-12-21T15:21:29.2265666+05:30
-\nUpdate 9: minor doc polish at 2025-12-21T15:21:29.3736509+05:30
-\nUpdate 10: minor doc polish at 2025-12-21T15:21:29.5299867+05:30
-\nUpdate 11: minor doc polish at 2025-12-21T15:21:29.7463914+05:30
-\nUpdate 12: minor doc polish at 2025-12-21T15:21:29.9474770+05:30
-\nUpdate 13: minor doc polish at 2025-12-21T15:21:30.1607575+05:30
-\nUpdate 14: minor doc polish at 2025-12-21T15:21:30.3906732+05:30
-\nUpdate 15: minor doc polish at 2025-12-21T15:21:30.6117385+05:30
-\nUpdate 16: minor doc polish at 2025-12-21T15:21:30.8373998+05:30
-\nUpdate 17: minor doc polish at 2025-12-21T15:21:31.0691555+05:30
-\nUpdate 18: minor doc polish at 2025-12-21T15:21:31.2876151+05:30
-\nUpdate 19: minor doc polish at 2025-12-21T15:21:31.5673627+05:30
-\nUpdate 20: minor doc polish at 2025-12-21T15:21:31.8441687+05:30
-\nUpdate 21: minor doc polish at 2025-12-21T15:21:32.1035260+05:30
-\nUpdate 22: minor doc polish at 2025-12-21T15:21:32.3529947+05:30
-\nUpdate 23: minor doc polish at 2025-12-21T15:21:32.5828418+05:30
-\nUpdate 24: minor doc polish at 2025-12-21T15:21:32.8073959+05:30
-\nUpdate 25: minor doc polish at 2025-12-21T15:21:33.0587334+05:30
-\nUpdate 26: minor doc polish at 2025-12-21T15:21:33.2796919+05:30
-\nUpdate 27: minor doc polish at 2025-12-21T15:21:33.5070697+05:30
-\nUpdate 28: minor doc polish at 2025-12-21T15:21:33.7276201+05:30
-\nUpdate 29: minor doc polish at 2025-12-21T15:21:33.9374658+05:30
-\nUpdate 30: minor doc polish at 2025-12-21T15:21:34.1477556+05:30
