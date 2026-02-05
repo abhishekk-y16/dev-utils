@@ -3,7 +3,7 @@
 [![Repo size](https://img.shields.io/github/repo-size/abhishekk-y16/dev-utils)](https://github.com/abhishekk-y16/dev-utils)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A Lightweight, Frontend-only collection of small developer utilities built with HTML, CSS and JavaScript.
+A Lightweight, Frontend-only collection of small Developer utilities built with HTML, CSS and JavaScript.
 
 --
 
