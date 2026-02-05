@@ -46,7 +46,7 @@ GIF demo (placeholder):
 
 ## Quick Start
 
-Open the project locally (no build step):
+Open the Project locally (no build step):
 
 ```powershell
 # from repo root
