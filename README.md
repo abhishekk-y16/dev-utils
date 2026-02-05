@@ -20,7 +20,7 @@ A Lightweight, Frontend-only collection of small developer utilities built with 
 
 ## Project overview
 
-This repository contains multiple small tools useful for daily development tasks. Each tool is implemented as a focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.
+This Repository contains multiple small tools useful for daily development tasks. Each tool is implemented as a focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.
 
 ## Features
 
