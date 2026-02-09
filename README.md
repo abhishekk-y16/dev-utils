@@ -6,7 +6,6 @@
 
 A Lightweight, Frontend-only collection of small Developer Utilities Built with HTML, CSS and JavaScript.
 
---
 
 ## Table of Contents
 
