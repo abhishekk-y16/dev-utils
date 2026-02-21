@@ -1,13 +1,13 @@
 # Developer Utilities Hub
 
-[![Repo size](https://img.shields.io/github/repo-size/abhishekk-y16/dev-utils)](https://github.com/abhishekk-y16/dev-utils)
+
+[![Repo size](https://img.shields.io/github/repo-size/abhishekk-y16/dev-utils)](https://github.com/abhishekk-y16/dev-utils) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A lightweight, frontend-only collection of small developer utilities built with HTML, CSS and JavaScript.
+A Lightweight,  Frontend-only collection of small Developer Utilities Built with HTML, CSS and JavaScript.   
 
---
 
-## Table of Contents
+## Table of Contents  
 
 - [Project overview](#project-overview)
 - [Features](#features)
@@ -20,7 +20,7 @@ A lightweight, frontend-only collection of small developer utilities built with 
 
 ## Project overview
 
-This repository contains multiple small tools useful for daily development tasks. Each tool is implemented as a focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.
+This Repository contains Multiple small tools useful for daily development tasks. Each tool is implemented as a  focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.
 
 ## Features
 
@@ -44,9 +44,9 @@ GIF demo (placeholder):
 
 ![demo-gif](assets/demo.gif)
 
-## Quick Start
+## Quick Start 
 
-Open the project locally (no build step):
+Open the Project locally (no build step):
 
 ```powershell
 # from repo root
@@ -64,7 +64,7 @@ Start-Process index.html
 - Add unit tests and CI for automated checks
 - Add theming presets and export/import for preferences
 
-## Contributing
+## Contributing 
 
 See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Small, focused PRs welcome.
 
@@ -101,7 +101,7 @@ Add screenshots here when available.
 How to run locally
 
 1. Open `index.html` in your browser (desktop-first responsive design).
-2. No build step — static site ready for GitHub Pages.
+2. No build step — static site ready for GitHub Pages. 
 
 Future improvements
 
@@ -109,7 +109,7 @@ Future improvements
 - Add copy/history per-tool
 - Add export/import presets
 
-Contribution & commits
+Contribution & commits 
 
 Suggested incremental commits:
 
