@@ -109,7 +109,7 @@ Future improvements
 - Add copy/history per-tool
 - Add export/import presets
 
-Contribution & commits
+Contribution & commits 
 
 Suggested incremental commits:
 
