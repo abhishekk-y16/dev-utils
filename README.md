@@ -64,7 +64,7 @@ Start-Process index.html
 - Add unit tests and CI for automated checks
 - Add theming presets and export/import for preferences
 
-## Contributing
+## Contributing 
 
 See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Small, focused PRs welcome.
 
