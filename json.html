@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JSON Formatter - Developer Utilities Hub</title>
+  <meta name="description" content="Validate, format, and beautify JSON with syntax highlighting and error detection.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html" aria-current="page">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">{ }</div>
+      <div>
+        <h2>JSON Formatter</h2>
+        <p class="muted">Validate, format, and beautify JSON with syntax highlighting.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Input JSON</h3>
+        <div class="card-body">
+          <textarea id="json-input" class="input-area code-font" placeholder='{"example": "Paste your JSON here..."}'  rows="10" aria-label="JSON input" spellcheck="false"></textarea>
+          <div class="button-row">
+            <button id="json-validate" class="button primary">Format & Validate</button>
+            <button id="json-minify" class="button">Minify</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Formatted Output</h3>
+        <div class="card-body">
+          <pre id="json-output" class="output-area code-font" aria-live="polite" aria-label="Formatted JSON output">Formatted JSON will appear here...</pre>
+          <div class="button-row">
+            <button id="json-copy" class="button">Copy to Clipboard</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

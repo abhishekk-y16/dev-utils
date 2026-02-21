@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Word Counter - Developer Utilities Hub</title>
+  <meta name="description" content="Count words, characters, sentences, and paragraphs in real-time with reading time estimate.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html" aria-current="page">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">📝</div>
+      <div>
+        <h2>Word Counter</h2>
+        <p class="muted">Real-time statistics for words, characters, sentences, and reading time.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Enter Your Text</h3>
+        <div class="card-body">
+          <textarea id="word-input" class="input-area" placeholder="Type or paste your text here..." rows="10" aria-label="Text input for counting"></textarea>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Statistics</h3>
+        <div class="card-body">
+          <div class="stats-grid" aria-live="polite">
+            <div class="stat-item">
+              <div class="stat-value" id="wc-words">Words: 0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="wc-chars">Chars: 0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="wc-sentences">Sentences: 0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="wc-paragraphs">Paragraphs: 0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="wc-reading-time">Reading time: ~0 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

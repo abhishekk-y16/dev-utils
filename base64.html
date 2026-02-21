@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Base64 Encoder/Decoder - Developer Utilities Hub</title>
+  <meta name="description" content="Encode and decode Base64 strings with full Unicode support.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html" aria-current="page">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">🔤</div>
+      <div>
+        <h2>Base64 Encoder/Decoder</h2>
+        <p class="muted">Encode and decode Base64 strings with full Unicode support.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Input</h3>
+        <div class="card-body">
+          <textarea id="b64-input" class="input-area" placeholder="Enter text to encode or Base64 string to decode..." rows="8" aria-label="Base64 input"></textarea>
+          <div class="button-row">
+            <button id="b64-encode" class="button primary">Encode to Base64</button>
+            <button id="b64-decode" class="button">Decode from Base64</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Output</h3>
+        <div class="card-body">
+          <pre id="b64-output" class="output-area code-font" aria-live="polite" aria-label="Base64 output">Result will appear here...</pre>
+          <div class="button-row">
+            <button id="b64-copy" class="button">Copy to Clipboard</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

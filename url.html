@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>URL Encoder/Decoder - Developer Utilities Hub</title>
+  <meta name="description" content="Encode and decode URL components with special character handling.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html" aria-current="page">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">🔗</div>
+      <div>
+        <h2>URL Encoder/Decoder</h2>
+        <p class="muted">Encode and decode URL components with proper character escaping.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Input</h3>
+        <div class="card-body">
+          <textarea id="url-input" class="input-area" placeholder="Enter URL or text to encode/decode..." rows="6" aria-label="URL input"></textarea>
+          <div class="button-row">
+            <button id="url-encode" class="button primary">Encode URL</button>
+            <button id="url-decode" class="button">Decode URL</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Output</h3>
+        <div class="card-body">
+          <pre id="url-output" class="output-area code-font" aria-live="polite" aria-label="URL output">Result will appear here...</pre>
+          <div class="button-row">
+            <button id="url-copy" class="button">Copy to Clipboard</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Common URL Characters</h3>
+        <div class="card-body">
+          <table class="char-reference">
+            <thead>
+              <tr>
+                <th>Character</th>
+                <th>Encoded</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Space</td><td>%20</td><td>Whitespace</td></tr>
+              <tr><td>!</td><td>%21</td><td>Exclamation</td></tr>
+              <tr><td>#</td><td>%23</td><td>Hash/Fragment</td></tr>
+              <tr><td>$</td><td>%24</td><td>Dollar sign</td></tr>
+              <tr><td>&</td><td>%26</td><td>Ampersand</td></tr>
+              <tr><td>=</td><td>%3D</td><td>Equals</td></tr>
+              <tr><td>?</td><td>%3F</td><td>Question mark</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

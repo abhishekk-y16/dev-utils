@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timestamp Converter - Developer Utilities Hub</title>
+  <meta name="description" content="Convert between Unix timestamps and human-readable dates with timezone support.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html">Regex Tester</a>
+        <a href="timestamp.html" aria-current="page">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">⏰</div>
+      <div>
+        <h2>Timestamp Converter</h2>
+        <p class="muted">Convert between Unix timestamps and human-readable dates.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Current Time</h3>
+        <div class="card-body">
+          <div class="current-time-display">
+            <div class="time-value" id="current-timestamp" aria-live="polite">Loading...</div>
+            <div class="time-label">Unix Timestamp (seconds)</div>
+          </div>
+          <div class="current-time-display">
+            <div class="time-value" id="current-date" aria-live="polite">Loading...</div>
+            <div class="time-label">ISO 8601 Format</div>
+          </div>
+          <div class="button-row">
+            <button id="ts-now" class="button">Use Current Time</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Timestamp to Date</h3>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="ts-input">Unix Timestamp (seconds)</label>
+            <input type="number" id="ts-input" class="input-field" placeholder="e.g., 1234567890" aria-label="Unix timestamp input">
+          </div>
+          <div class="button-row">
+            <button id="ts-to-date" class="button primary">Convert to Date</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Date to Timestamp</h3>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="ts-date">Date & Time</label>
+            <input type="datetime-local" id="ts-date" class="input-field" aria-label="Date and time input">
+          </div>
+          <div class="button-row">
+            <button id="date-to-ts" class="button primary">Convert to Timestamp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Result</h3>
+        <div class="card-body">
+          <div id="ts-output" class="output-area" aria-live="polite" aria-label="Conversion result">Result will appear here...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

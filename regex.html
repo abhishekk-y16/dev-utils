@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Regex Tester - Developer Utilities Hub</title>
+  <meta name="description" content="Test regular expressions with live highlighting and match details.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div>
+      <h1>Developer Utilities Hub</h1>
+      <div style="font-size:12px;color:var(--muted)">A curated set of small frontend tools</div>
+    </div>
+    <div class="controls">
+      <nav class="nav" id="tool-nav">
+        <a href="index.html">Home</a>
+        <a href="password.html">Password</a>
+        <a href="wordcounter.html">Word Counter</a>
+        <a href="json.html">JSON Formatter</a>
+        <a href="base64.html">Base64</a>
+        <a href="color.html">Color Gen</a>
+        <a href="regex.html" aria-current="page">Regex Tester</a>
+        <a href="timestamp.html">Timestamps</a>
+        <a href="url.html">URL Encode</a>
+      </nav>
+      <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="tool-hero">
+      <div class="tool-icon">🔍</div>
+      <div>
+        <h2>Regex Tester</h2>
+        <p class="muted">Test regular expressions with live highlighting and match details.</p>
+      </div>
+    </section>
+
+    <section class="tool-section">
+      <div class="card">
+        <h3>Regular Expression</h3>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="regex-pattern">Pattern</label>
+            <input type="text" id="regex-pattern" class="input-field code-font" placeholder="e.g., \w+@\w+\.\w+" aria-label="Regex pattern">
+          </div>
+          
+          <div class="form-group">
+            <label for="regex-flags">Flags</label>
+            <div class="checkbox-group inline">
+              <label class="checkbox-label">
+                <input type="checkbox" id="regex-flag-g" value="g" checked>
+                <span>g (global)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="regex-flag-i" value="i">
+                <span>i (ignore case)</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="regex-flag-m" value="m">
+                <span>m (multiline)</span>
+              </label>
+            </div>
+            <input type="hidden" id="regex-flags" value="g">
+          </div>
+
+          <div class="form-group">
+            <label for="regex-input">Test String</label>
+            <textarea id="regex-input" class="input-area" placeholder="Enter text to test against regex..." rows="6" aria-label="Text to test"></textarea>
+          </div>
+
+          <div class="button-row">
+            <button id="regex-test" class="button primary">Test Regex</button>
+            <button id="regex-clear" class="button">Clear All</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Results <span id="regex-match-count" class="match-count" aria-live="polite"></span></h3>
+        <div class="card-body">
+          <div id="regex-output" class="output-area" aria-live="polite" aria-label="Regex matches">Results will appear here...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Developer Utilities Hub — Simple, modular, frontend-only tools</small>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
