@@ -44,7 +44,7 @@ GIF demo (placeholder):
 
 ![demo-gif](assets/demo.gif)
 
-## Quick Start
+## Quick Start 
 
 Open the Project locally (no build step):
 
