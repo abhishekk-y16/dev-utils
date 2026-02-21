@@ -101,7 +101,7 @@ Add screenshots here when available.
 How to run locally
 
 1. Open `index.html` in your browser (desktop-first responsive design).
-2. No build step — static site ready for GitHub Pages.
+2. No build step — static site ready for GitHub Pages. 
 
 Future improvements
 
