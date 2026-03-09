@@ -1,6 +1,6 @@
 # Usage
 
-Open `index.html` in a modern browser. For local dev, running a static server is   recommended:
+Open `index.html` in a modern browser. For local dev, running a static server is   recommended: 
 
 ```powershell
 # from project root
