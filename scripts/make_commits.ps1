@@ -30,5 +30,5 @@ git push origin $branch
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Push completed." -ForegroundColor Green
 } else {
-    Write-Host "Push failed. Please check remote settings ." -ForegroundColor Red
+    Write-Host "Push failed. Please check remote settings  ." -ForegroundColor Red
 }
