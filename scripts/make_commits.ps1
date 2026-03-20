@@ -3,7 +3,7 @@ Param(
     [string]$filePath = "contribution-bump.txt"
 )
 
-# Get current branch
+# Get current branch 
 $branch = (git rev-parse --abbrev-ref HEAD) -replace "\r|\n",""
 Write-Host "Current branch: $branch"
 
