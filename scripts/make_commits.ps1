@@ -23,7 +23,7 @@ for ($i = 1; $i -le $count; $i++) {
         Write-Host "Committed: $msg"
     }
 }
-
+ 
 Write-Host "Pushing $count commits to origin/$branch..."
 git push origin $branch
 
