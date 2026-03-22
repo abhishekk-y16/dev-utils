@@ -38,7 +38,7 @@
   --shadow-lg: 0 10px 40px rgba(15,23,42,0.1);
   --shadow-xl: 0 20px 60px rgba(15,23,42,0.15);
   
-  /* Transitions */
+  /* Transitions */ 
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
