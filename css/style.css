@@ -100,8 +100,8 @@ body {
 .skip-link:focus {
   top: 0;
 }
-
-/* ==================== HEADER ==================== */
+ 
+/* ==================== HEADER ==================== */ 
 .site-header {
   display: flex;
   align-items: center;
