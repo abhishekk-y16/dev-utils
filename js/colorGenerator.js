@@ -66,7 +66,7 @@ export default function initColor(){
   }
   
   function gen(){
-    const r=randomInt(256), g=randomInt(256), b=randomInt(256);
+    const r=randomInt(256), g=randomInt(256), b=randomInt(256); 
     const hex = rgbToHex(r,g,b);
     const hsl = rgbToHsl(r, g, b);
     
