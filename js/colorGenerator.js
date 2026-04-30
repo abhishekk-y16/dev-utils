@@ -11,7 +11,7 @@ export default function initColor(){
   let colorHistory = JSON.parse(localStorage.getItem('colorHistory') || '[]');
 
   function randomInt(n){ 
-    // Use crypto for better randomness
+    // Use crypto for better randomness 
     const arr = new Uint32Array(1);
     crypto.getRandomValues(arr);
     return arr[0] % n;
