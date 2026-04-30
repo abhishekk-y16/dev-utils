@@ -1,4 +1,4 @@
-// Color generator module with HSL support and history 
+// Color generator module with HSL support and history  
 export default function initColor(){
   const btn = document.getElementById('color-gen');
   const copyBtn = document.getElementById('color-copy');
