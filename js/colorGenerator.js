@@ -52,7 +52,7 @@ export default function initColor(){
     renderHistory();
   }
   
-  function renderHistory() {
+  function renderHistory() { 
     if (!historyEl) return;
     
     if (colorHistory.length === 0) {
