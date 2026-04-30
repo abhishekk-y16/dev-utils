@@ -90,7 +90,7 @@ export default function initColor(){
     try{ 
       await navigator.clipboard.writeText(text); 
       copyBtn.textContent='✓ Copied!'; 
-      setTimeout(()=>copyBtn.textContent='Copy HEX', 1500); 
+      setTimeout(()=>copyBtn.textContent='Copy HEX', 1500);  
     }catch(e){
       copyBtn.textContent='❌ Failed';
       setTimeout(()=>copyBtn.textContent='Copy HEX', 1500);
