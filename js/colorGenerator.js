@@ -59,7 +59,7 @@ export default function initColor(){
       historyEl.innerHTML = '<p class="muted">Your recently generated colors will appear here...</p>';
       return;
     }
-    
+     
     historyEl.innerHTML = colorHistory.map(hex => 
       `<div class="color-history-item" style="background:${hex}" title="${hex}" onclick="navigator.clipboard.writeText('${hex}')"></div>`
     ).join('');
