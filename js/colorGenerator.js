@@ -104,7 +104,7 @@ export default function initColor(){
       let text = '';
       if (format === 'hex') text = hexEl.textContent.replace('HEX: ', '');
       else if (format === 'rgb') text = rgbEl.textContent.replace('RGB: ', '');
-      else if (format === 'hsl' && hslEl) text = hslEl.textContent.replace('HSL: ', '');
+      else if (format === 'hsl' && hslEl) text = hslEl.textContent.replace('HSL: ', ''); 
       
       try {
         await navigator.clipboard.writeText(text);
