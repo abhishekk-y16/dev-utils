@@ -38,7 +38,7 @@ export default function initColor(){
       }
     }
     
-    return {
+    return { 
       h: Math.round(h * 360),
       s: Math.round(s * 100),
       l: Math.round(l * 100)
