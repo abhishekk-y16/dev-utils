@@ -1,4 +1,4 @@
-Param(
+Param( 
     [int]$count = 99,
     [string]$filePath = "contribution-bump.txt"
 )
