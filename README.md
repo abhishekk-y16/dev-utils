@@ -53,7 +53,7 @@ Open the Project locally (no build step):
 Start-Process index.html
 ``
 
-## How to use
+## How to use 
 
 - Browse to the homepage and select a tool from the nav.
 - Each tool lives on its own page with a focused UI and copy buttons.
