@@ -58,7 +58,7 @@ Start-Process index.html
 - Browse to the homepage and select a tool from the nav.
 - Each tool lives on its own page with a focused UI and copy buttons.
 
-## Future improvements
+## Future improvements 
 
 - Accessibility improvements (ARIA, keyboard shortcuts)
 - Add unit tests and CI for automated checks
