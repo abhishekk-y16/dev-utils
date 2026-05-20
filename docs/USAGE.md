@@ -6,5 +6,5 @@ Open `index.html`  in a modern browser.  For local dev, running a static server 
 # from project root 
 python -m http.server 8080 
 # or
-npx serve .
+npx serve . 
 ```
