@@ -22,7 +22,7 @@ A Lightweight, Frontend-only collection of small Developer Utilities Built with 
 
  This Repository contains Multiple small tools useful for daily development tasks. Each tool is implemented as a  focussed JS module and presented in a clean, card-based UI. The app is static and ready to deploy to GitHub Pages.  
 
-## Features 
+## Features  
 
 - Password Generator — configurable length & character sets
 - Word Counter — live words/characters/sentences
