@@ -62,4 +62,4 @@ export default function initJSONFormatter(){
       setTimeout(()=>btnCopy.textContent='Copy to Clipboard', 1500);
     }
   });
-}
+} 
