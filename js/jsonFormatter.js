@@ -1,4 +1,4 @@
-// JSON Formatter module with minify option
+// JSON Formatter module with minify option 
 export default function initJSONFormatter(){
   const ta = document.getElementById('json-input');
   const out = document.getElementById('json-output');
