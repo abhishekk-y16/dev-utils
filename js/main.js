@@ -10,7 +10,7 @@ import initURL from './urlEncoder.js';
 // Optimized bootstrapping - only initializes relevant modules based on current page
 document.addEventListener('DOMContentLoaded', () => {
   // Detect current page from URL
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html'; 
   
   // Map pages to their initializer functions
   const pageModules = {
