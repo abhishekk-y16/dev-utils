@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Add keyboard shortcuts
   initKeyboardShortcuts();
-});
+}); 
 
 // Update active navigation link based on current page
 function updateActiveNavLink() {
