@@ -100,7 +100,7 @@ function initKeyboardShortcuts() {
       }
     }
   });
-}
+} 
 
 // Utility function to show error messages
 function showError(message) {
