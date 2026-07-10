@@ -1,6 +1,6 @@
 Param( 
     [int]$count = 99,
-    [string]$filePath = "contribution-bump.txt" 
+    [string]$filePath =  "contribution-bump.txt" 
 ) 
   
 # Get current branch   
