@@ -1,7 +1,7 @@
 Param( 
     [int]$count = 99,
     [string]$filePath =  "contribution-bump.txt" 
-)  
+)   
   
 # Get current branch   
 $branch = (git rev-parse --abbrev-ref HEAD) -replace "\r|\n",""
