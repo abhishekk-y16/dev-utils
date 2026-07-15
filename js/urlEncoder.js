@@ -1,7 +1,7 @@
 // URL encoder/decoder module with improved feedback
 export default function initURL(){
   const ta = document.getElementById('url-input'); 
-  const out = document.getElementById('url-output');
+  const out = document.getElementById('url-output'); 
   const enc = document.getElementById('url-encode');
   const dec = document.getElementById('url-decode');
   const copyBtn = document.getElementById('url-copy');
