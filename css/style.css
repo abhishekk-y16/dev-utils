@@ -1,7 +1,7 @@
 /* ==================== CSS VARIABLES ====================  */      
 :root {    
   /* Colors - Light Mode */      
-  --bg: #f6f8fb;
+  --bg: #f6f8fb; 
   --bg-elevated: #ffffff;
   --card: #ffffff;
   --text-primary: #0f172a;
