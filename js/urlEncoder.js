@@ -4,7 +4,7 @@ export default function initURL(){
   const out = document.getElementById('url-output'); 
   const enc = document.getElementById('url-encode');
   const dec = document.getElementById('url-decode'); 
-  const copyBtn = document.getElementById('url-copy');
+  const copyBtn = document.getElementById('url-copy'); 
 
   enc.addEventListener('click', ()=>{ 
     const input = ta.value || '';
