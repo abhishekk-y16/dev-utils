@@ -9,7 +9,7 @@ Write-Host "Current branch: $branch"
 
 if (-not (Test-Path $filePath)) {
     "Contribution bump log" | Out-File -FilePath $filePath -Encoding UTF8
-}
+} 
 
 for ($i = 1; $i -le $count; $i++) {
     $line = "$(Get-Date -Format o) - bump $i"
